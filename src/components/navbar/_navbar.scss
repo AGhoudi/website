@@ -3,7 +3,7 @@
 #navigation {
   @include media(small-computer) {
     @include flexDisplay;
-    padding: 0.625rem auto;
+    @include padding(0.625rem,auto,0.625rem,auto);
   }
 }
 
@@ -20,16 +20,16 @@
 }
 
 .brand {
-  @include flexDisplay;    
-  padding: 0.625rem auto;
+  @include flexDisplay;
+  @include padding(0.625rem,auto,0.625rem,auto);
   font-family: $fontElite;
   cursor: pointer;
   &__logo {
     border-radius: 100%;
-    border: 0.125rem solid $white;
-    margin: auto 0.625rem;
-    width: 3.375rem;
-    height: 3.375rem;
+    @include border(0.125rem,$white);
+    @include margin(auto,0.625rem,auto,0.625rem);
+    @include width(3.375rem);
+    @include height(3.375rem);
   }
 }
 
@@ -39,13 +39,13 @@
   box-sizing: border-box;
   overflow-x: hidden !important;
   &-brand {
-    font-size: 1.6875rem;
+    font-size: map-get($fontSize,large);
     color: $white !important;
     @include media(large) {
-      font-size: 1.4375rem;
+      font-size: map-get($fontSize,medium);
     }
     @include media(computer) {
-      font-size: 1.375rem;
+      font-size: map-get($fontSize,other);
     }
     &:hover {
       transform: scale(0.9);
@@ -61,14 +61,14 @@
 .nav-link {
   color: $white !important;
   font-family: $fontElite;
-  font-size: 1.4375rem;
+  font-size: map-get($fontSize,medium);
   margin: auto 1.5625rem;
   @include media(large) {
-    font-size: 1.25rem !important;
+    font-size: map-get($fontSize,small) !important;
     padding: 0 !important;
   }
   @include media(computer) {
-    font-size: 1.125rem !important;
+    font-size: map-get($fontSize,x-small) !important;
   }
   &:hover {
     transform: scale(1.3);

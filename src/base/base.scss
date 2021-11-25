@@ -10,6 +10,13 @@ $yellow: #D6C7A8;
 
 /* FONTS */
 $fontElite: 'Special Elite', cursive;
+$fontSize: (
+  large: 1.6875rem,
+  medium: 1.4375rem,
+  other: 1.375rem,
+  small: 1.25rem,
+  x-small: 1.125rem
+);
 
 /* MIXIN */
 @mixin flexDisplay {
@@ -17,16 +24,30 @@ $fontElite: 'Special Elite', cursive;
   justify-content: center;
   align-items: center;
 }
+
 @mixin textcenter {
   text-align: center;
+}
+
+@mixin border($size,$color) {
+  border: $size solid $color;
 }
 
 /* SIZE */
 @mixin height($value) {
   height: $value;
 }
+
 @mixin width($value) {
   width: $value;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
 }
 
 /* BREAKPOINTS */
