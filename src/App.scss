@@ -1,0 +1,10 @@
+@import "./base/base.scss";
+
+/* APP */
+.App {
+  @include textcenter;
+  @include height(100vh);
+  @include width(100%);
+  box-sizing: border-box;
+  background-color: $yellow;
+}

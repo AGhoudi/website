@@ -1,0 +1,77 @@
+@import "../../base/base.scss";
+
+#navigation {
+  @include media(small-computer) {
+    @include flexDisplay;
+    padding: 0.625rem auto;
+  }
+}
+
+#navbarNavDropdown {
+  @include media(small-computer) {
+    @include flexDisplay;
+  }  
+}
+
+.collapse:not(.show) {
+  @include media(small-tablet) {
+    display: none !important;
+  }  
+}
+
+.brand {
+  @include flexDisplay;    
+  padding: 0.625rem auto;
+  font-family: $fontElite;
+  cursor: pointer;
+  &__logo {
+    border-radius: 100%;
+    border: 0.125rem solid $white;
+    margin: auto 0.625rem;
+    width: 3.375rem;
+    height: 3.375rem;
+  }
+}
+
+.navbar {
+  max-width: 100vw;
+  background-color: $darkBlue !important;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  &-brand {
+    font-size: 1.6875rem;
+    color: $white !important;
+    @include media(large) {
+      font-size: 1.4375rem;
+    }
+    @include media(computer) {
+      font-size: 1.375rem;
+    }
+    &:hover {
+      transform: scale(0.9);
+      color: $darkYellow !important;
+    }
+  }
+  &-toggler-icon {
+    background-color: $white !important;
+    border-radius: 0.3125rem;
+  }
+}
+
+.nav-link {
+  color: $white !important;
+  font-family: $fontElite;
+  font-size: 1.4375rem;
+  margin: auto 1.5625rem;
+  @include media(large) {
+    font-size: 1.25rem !important;
+    padding: 0 !important;
+  }
+  @include media(computer) {
+    font-size: 1.125rem !important;
+  }
+  &:hover {
+    transform: scale(1.3);
+    color: $darkYellow !important;
+  }
+}

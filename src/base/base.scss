@@ -1,0 +1,46 @@
+/* SASS RULES */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* COLORS */
+$white: #fff;
+$darkBlue: #253743;
+$darkYellow: #A19170;
+$yellow: #D6C7A8;
+
+/* FONTS */
+$fontElite: 'Special Elite', cursive;
+
+/* MIXIN */
+@mixin flexDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin textcenter {
+  text-align: center;
+}
+
+/* SIZE */
+@mixin height($value) {
+  height: $value;
+}
+@mixin width($value) {
+  width: $value;
+}
+
+/* BREAKPOINTS */
+$breakpoints: (
+  large: 75rem,
+  computer: 64.0625rem,
+  small-computer: 61.875rem,
+  small-tablet: calc(767.5px),
+  small: 25rem
+);
+
+/* MEDIA QUERIES */
+@mixin media($size) {
+  @media screen and (max-width: map-get($breakpoints, $size)){
+    @content; 
+  }  
+}

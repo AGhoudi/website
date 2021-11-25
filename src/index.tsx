@@ -1,7 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
 import App from './App';
+
+import './index.scss';
+
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root') as HTMLElement
 );
 
 // If you want your app to work offline and load faster, you can change
