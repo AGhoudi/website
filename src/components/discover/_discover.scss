@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+section#discover {
+  width: 100vw;
+  min-height: 62.5rem;
+  height: auto;
+  background-color: #D6C7A8;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  height: 18.75rem;
+  width: 90vw;
+  background-color: #d6c7a8;
+}
+
+.presentation {
+  font-size: 1.5625rem;
+  color: #253743;
+  font-style: italic;
+  font-family: 'Special Elite', cursive;
+  text-shadow: 0.09375rem 0.09375rem 0.125rem #fff;
+  text-align: center;
+  margin: 10.625rem auto 0 auto;  
+}
+
+@media screen and (max-width: 1222px) {
+  section#discover {
+    min-height: 1018px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .presentation {
+    font-size: 1.4375rem;
+  }
+
+  section#discover {
+    min-height: 1030px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 815px) {
+  section#discover {
+    min-height: 1040px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#discover {
+    min-height: 1070px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 48.0625rem) {
+  .presentation {
+    font-size: 1.3125rem;
+    margin: 9.375rem auto 0 auto;
+  } 
+}
+
+@media screen and (max-width: 685px) {
+  section#discover {
+    min-height: 1100px;
+    height: auto;    
+  }
+
+  .presentation {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 33.75rem) {
+  section#discover {
+    min-height: 1150px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 26.625rem) {
+  .presentation {
+    font-size: 1.125rem;
+  }
+  section#discover {
+    min-height: 1170px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section#discover {
+    min-height: 1100px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 410px) {
+  section#discover {
+    min-height: 1220px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 405px) {
+  section#discover {
+    min-height: 1250px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section#discover {
+    min-height: 1280px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section#discover {
+    min-height: 1330px;
+    height: auto;    
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .presentation {
+    font-size: 1.125rem;
+    margin-top: 8.75rem;
+  }
+}
