@@ -4,7 +4,9 @@
 
 /* COLORS */
 $white: #fff;
+$black: #000;
 $darkBlue: #253743;
+$blue: #1e2f45;
 $darkYellow: #A19170;
 $yellow: #D6C7A8;
 
@@ -13,13 +15,19 @@ $fontElite: 'Special Elite', cursive;
 $fontSize: (
   x-large: 2.375rem,
   m-large: 2.25rem,
+  med-larger: 2.125rem,
   larger: 1.9375rem,
+  m-big: 1.875rem,
   big: 1.8125rem,
   large: 1.6875rem,
+  medium-large:  1.5625rem,
+  medium-plus: 1.525rem,
   medium: 1.4375rem,
   other: 1.375rem,
+  small-plus: 1.3125rem,
   small: 1.25rem,
-  x-small: 1.125rem
+  x-small: 1.125rem,
+  very-small: 0.9375rem
 );
 $shadow: (
   yellowShadow: 0.09375rem 0.09375rem 0.125rem rgb(187, 152, 106),
