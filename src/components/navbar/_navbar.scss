@@ -62,10 +62,10 @@
   color: $white !important;
   font-family: $fontElite;
   font-size: map-get($fontSize,medium);
-  margin: auto 1.5625rem;
+  @include margin(auto,1.5625rem,auto,1.5625rem);
   @include media(large) {
     font-size: map-get($fontSize,small) !important;
-    padding: 0 !important;
+    @include padding(0,0,0,0 !important);
   }
   @include media(computer) {
     font-size: map-get($fontSize,x-small) !important;

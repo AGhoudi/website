@@ -1,244 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import "../../base/base.scss";
 
-#home {
+.header {
   background: linear-gradient(
 rgba(0, 0, 0, 0.45),
 rgba(0, 0, 0, 0.45)
   ),url(../../assets/images/tech.webp)no-repeat;
   background-size: cover;
-  color: #fff;
-  text-shadow: 0.09375rem 0.09375rem 0.125rem rgb(187, 152, 106);
-  width: 100vw;
+  color: $white;
+  text-shadow: map-get($shadow, yellowShadow);
+  @include width(100vw);
   min-height: 50rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexDisplay;
   flex-direction: column;
   overflow-x: hidden;
   top: 5rem;
-}
-
-.name {
-  font-size: 2.375rem;
-  font-family: 'Special Elite', cursive;
-  margin: 0.9375rem auto;
-}
-
-.job {
-  font-size: 1.9375rem;
-  font-family: 'Special Elite', cursive;
-  margin: 0.9375rem auto;
-}
-
-.describe {
-  font-family: 'Special Elite', cursive;
-  font-size: 1.5625rem;
-  font-style: italic;
-  padding: 0.9375rem;
-  margin: 0.9375rem auto;
-}
-
-a.btn.btn-outline-dark {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1875rem solid #fff !important;
-  border-radius: 0.625rem;
-  color: #fff !important;
-  font-size: 1.125rem;
-  font-weight: bold;
-  font-family: 'Special Elite', cursive;
-  margin: 0.9375rem auto;
-}
-
-a.btn.btn-outline-dark:hover {
-  background-color: #fff !important;
-  border:  0.1875rem solid #000 !important;
-  color: #000 !important;    
-}
-
-div.picture-box {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3.7625rem auto 1.1125rem auto !important;
-}
-
-.circle {
-  height: 12.5rem;
-  width: 12.5rem;
-  border: 1.875rem solid #1e2f45;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes turn {
-  0% {
-    transform: rotate(-0deg);
-  }
-
-  10% {
-    transform: rotate(-36deg);
-  }
-
-  20% {
-    transform: rotate(-72deg);
-  }
-
-  30% {
-    transform: rotate(-108deg);
-  }
-
-  40% {
-    transform: rotate(-144deg);
-  }
-
-  50% {
-    transform: rotate(-180deg);
-  }
-
-  60% {
-    transform: rotate(-216deg);
-  }
-
-  70% {
-    transform: rotate(-252deg);
-  }
-
-  80% {
-    transform: rotate(-288deg);
-  }
-
-  90% {
-    transform: rotate(-324deg);
-  }
-
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.circle:hover {
-  border-color: #fff;
-  animation-name: turn;
-  animation-duration: 1.2s;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.avatar {
-  height: 85%;
-  width: 85%;
-  border-radius: 100%;
-  border: 0.125rem solid #fff;
-}
-
-.circle:hover .avatar {
-  border: 0.0625rem solid #fff;
-}
-
-@media screen and (max-width: 64.0625rem) {
-  .circle {
-    height: 11.5rem !important;
-    width: 11.5rem !important;
-  }
-  .name {
-    font-size: 2.25rem;
-  }
-  
-  .job {
-    font-size: 1.8125rem;
-  }
-  
-  .describe {
-    font-size: 1.4375rem;
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  div#home {
+  @include media(tablet) {
     width: 100% !important;
     padding-right: 0 !important;
     padding-left: 0 !important;
     min-height: 45rem;
     padding-top: 8.125rem;
   }
-   
-  div.picture-box {
-    margin-top: 3.75rem !important;
+  &__name {
+    font-size: map-get($fontSize,x-large);
+    font-family: $fontElite;
+    @include margin(0.9375rem,auto,09375rem,auto);
+    @include media(computer) {
+      font-size: map-get($fontSize,m-large);
+    }
+    @include media(tablet) {
+      font-size: 2.125rem;
+    }
+    @include media(big-mobile) {
+      font-size: 2.125rem;
+    }
+    @include media(mobile) {
+      font-size: 30px;
+    }
   }
-
-  .circle {
-    height: 11rem !important;
-    width: 11rem !important;
+  &__job {
+    font-size: map-get($fontSize,larger);
+    font-family: $fontElite;
+    @include margin(0.9375rem,auto,0.9375rem,auto);
+    @include media(computer) {
+      font-size:  map-get($fontSize,big);
+    }
+    @include media(tablet) {
+      font-size: 1.6875rem;
+    }
+    @include media(big-mobile) {
+      font-size: 1.525rem;
+    }
+    @include media(mobile) {
+      font-size: 23px;
+    }
   }
-
-  .name {
-    font-size: 2.125rem;
+  &__describe {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5625rem;
+    font-style: italic;
+    padding: 0.9375rem;
+    margin: 0.9375rem auto;
+    @include media(computer) {
+      font-size: 1.4375rem;
+    }
+    @include media(tablet) {
+      font-size: 1.3125rem;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+    @include media(big-mobile) {
+      font-size: 1.125rem;
+    }
+    @include media(mobile) {
+      font-size: 18px;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
   }
-  
-  .job {
-    font-size: 1.6875rem;
-  }
-  
-  .describe {
-    font-size: 1.3125rem;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  &__button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1875rem solid #fff !important;
+    border-radius: 0.625rem;
+    color: #fff !important;
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    margin: 0.9375rem auto;
+    @include media(big-mobile) {
+      font-size: 1.525rem;
+    }
+    @include media(mobile) {
+      font-size: 0.9375rem;
+    }
+    &:hover {
+      background-color: #fff !important;
+      border:  0.1875rem solid #000 !important;
+      color: #000 !important;    
+    }
   }
 }
 
-@media screen and (max-width: 31.25rem) {
-  .picture-box {
+.avatar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.7625rem auto 1.1125rem auto !important;
+  @include media(tablet) {
+    margin-top: 3.75rem !important;
+  }
+  @include media(big-mobile) {
     margin: 0.9375rem auto 0 auto !important;
     padding: 3.125rem auto !important;
   }
-  .describe {
-    font-size: 1.125rem;  
+  &__circle {
+    height: 12.5rem;
+    width: 12.5rem;
+    border: 1.875rem solid #1e2f45;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media(computer) {
+      height: 11.5rem !important;
+      width: 11.5rem !important;
+    }
+    @include media(tablet) {
+      height: 11rem !important;
+      width: 11rem !important;
+    }
+    @include media(mobile) {
+      height: 10rem !important;
+      width: 10rem !important;
+    }
+    &:hover {
+      border-color: #fff;
+      animation-name: turn;
+      animation-duration: 1.2s;
+      background-color: #fff;
+      cursor: pointer;
+    }
   }
-  h1.name {
-    font-size: 2.125rem;
+  &__picture {
+    height: 85%;
+    width: 85%;
+    border-radius: 100%;
+    border: 0.125rem solid #fff;
   }
-  h3.job {
-    font-size: 1.525rem;
-  }
-  .header-button {
-    font-size: 1.525rem;
+  &__circle:hover &__picture {
+    border: 0.0625rem solid #fff;
   }
 }
 
-@media screen and (max-width: 26.5625rem) {
-  h1 {
-    font-size: 1.9rem;
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
   }
 
-  h3 {
-    font-size: 1.5rem;
+  10% {
+    transform: rotate(36deg);
   }
 
-  .name {
-    font-size: 30px;
+  20% {
+    transform: rotate(72deg);
   }
-  
-  .job {
-    font-size: 23px;
+
+  30% {
+    transform: rotate(108deg);
   }
-  
-  .describe {
-    font-size: 18px;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+
+  40% {
+    transform: rotate(144deg);
   }
-  
-  a.btn.btn-outline-dark {
-    font-size: 0.9375rem;
+
+  50% {
+    transform: rotate(180deg);
   }
-  .circle {
-    height: 10rem !important;
-    width: 10rem !important;
+
+  60% {
+    transform: rotate(216deg);
+  }
+
+  70% {
+    transform: rotate(252deg);
+  }
+
+  80% {
+    transform: rotate(288deg);
+  }
+
+  90% {
+    transform: rotate(324deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
