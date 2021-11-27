@@ -1,18 +1,22 @@
 /* SASS RULES */
-
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /* COLORS */
 $white: #fff;
 $black: #000;
+$blackBlue: #141E30;
 $darkBlue: #253743;
 $blue: #1e2f45;
+$lightBlue: #243B55;
 $darkYellow: #A19170;
 $yellow: #D6C7A8;
 
 /* FONTS */
 $fontElite: 'Special Elite', cursive;
+$fontParisienne:  'Parisienne', cursive;
 $fontSize: (
+  very-large: 3.125rem,
   x-large: 2.375rem,
   m-large: 2.25rem,
   med-larger: 2.125rem,

@@ -1,82 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import "../../base/base.scss";
 
 .ribbon {
-  font-size: 3.125rem !important;
-  width: 60%;
+  font-size: map-get($fontSize,very-large) !important;
+  @include width(60%);
   font-weight: bold;
   position: relative;
-  background: linear-gradient(0deg, #141E30 0%, #243B55 99%);
-  color: #fff;
-  text-align: center;
+  background: linear-gradient(0deg, $blackBlue 0%, $lightBlue 99%);
+  color: $white;
+  @include textcenter;
   padding: 1em 0em;
-  margin: 0 auto 1.2em auto;
+  @include margin(0,auto,1.2em,auto);
   top: 2.5em;
-  font-family: 'Parisienne', cursive;
-}
-
-.ribbon:before, .ribbon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #141E30;
-  z-index: -1;
-}
-
-.ribbon:before {
-  left: -2em;
-  border-left-color: transparent;
-}
-
-.ribbon:after {
-  right: -2em;
-  border-right-color: transparent;
-}
-
-.ribbon-folds:before, .ribbon-folds:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-style: solid;
-  border-color: #243B55 transparent;
-  bottom: -1em;
-}
-
-.ribbon-folds:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
-}
-
-.ribbon-folds:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
-}
-
-.ribbon-index {
-  position: relative;
-  z-index: 1;
-}
-
-@media  screen and (max-width: 1025px) {
-  .ribbon {
-    font-size: 45px !important;
-    width: 65%;
+  font-family: $fontParisienne;
+  @include media(computer) {
+    font-size: 2.8125rem !important;
+    @include width(65%);
     top: 2.6em;
   }
-}
-
-@media  screen and (max-width: 769px) {
-  .ribbon {
-    font-size: 35px !important;
-    width: 63%;
+  @include media(tablet) {
+    font-size: 2.1875rem !important;
+    @include width(63%);
     top: 2.6em;
   }
-}
-
-@media screen and (max-width: 425px) {
-  .ribbon {
-    font-size: 29px !important;
-    width: 63%;
+  @include media(mobile) {
+    font-size: 1.8125rem !important;
+    @include width(63%);
     top: 3.2em;
+  }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    @include border(1.5em,$blackBlue);
+    z-index: -1;
+  }
+  &:before {
+    left: -2em;
+    border-left-color: transparent;
+  }
+  &:after {
+    right: -2em;
+    border-right-color: transparent;
+  }
+  &-folds:before, &-folds:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: $lightBlue transparent;
+    bottom: -1em;
+  }
+  &-folds:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+  }
+  &-folds:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+  }
+  &-index {
+    position: relative;
+    z-index: 1;
   }
 }

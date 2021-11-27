@@ -3,7 +3,7 @@ import Present from "../present/present";
 
 import "./_discover.scss";
 
-const Discover = () => (
+const Discover: React.FunctionComponent = () => (
   <section id="discover">
     <BlueRibbon title="Me Découvrir" />
     <div className="content">

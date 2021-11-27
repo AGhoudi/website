@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import './_blue-ribbon.scss';
 
 interface Ribbon {

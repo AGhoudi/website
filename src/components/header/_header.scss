@@ -151,12 +151,12 @@ rgba(0, 0, 0, 0.45)
   @include height(100%);
   @include width(100%);
   @include flexDisplay;
-  @include margin(3.7625rem,auto,1.1125rem,auto !important);
+  margin:3.7625rem auto 1.1125rem auto !important;
   @include media(tablet) {
     margin-top: 3.75rem !important;
   }
   @include media(big-mobile) {
-    @include margin(0.9375rem,auto,0,auto !important);
+    margin: 0.9375rem auto 0 auto !important;
     padding: 3.125rem auto !important;
   }
   &__circle {
@@ -166,16 +166,16 @@ rgba(0, 0, 0, 0.45)
     border-radius: 100%;
     @include flexDisplay;
     @include media(computer) {
-      @include height(11.5rem !important);
-      @include width(11.5rem !important);
+      height: 11.5rem !important;
+      width: 11.5rem !important;
     }
     @include media(tablet) {
-      @include height(11rem !important);
-      @include width(11rem !important);
+      height: 11rem !important;
+      width: 11rem !important;
     }
     @include media(mobile) {
-      @include height(10rem !important);
-      @include width(10rem !important);
+      height: 10rem !important;
+      width: 10rem !important;
     }
     &:hover {
       border-color: $white;
