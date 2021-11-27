@@ -19,7 +19,7 @@ const Present:FC = () => (
   <div> 
     <div className="present">
       <p className="present__title">Mes langages utilisés</p>
-      <div className="image-grid">
+      <div className="present__grid">
         <img className="icons" src={html} alt="html" /> 
         <img className="icons"  src={css} alt="css" /> 
         <img className="icons" src={javascript} alt="javascript" /> 
