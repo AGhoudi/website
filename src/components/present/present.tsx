@@ -20,18 +20,18 @@ const Present:FC = () => (
     <div className="present">
       <p className="present__title">Mes langages utilisés</p>
       <div className="present__grid">
-        <img className="icons" src={html} alt="html" /> 
-        <img className="icons"  src={css} alt="css" /> 
-        <img className="icons" src={javascript} alt="javascript" /> 
-        <img className="icons" src={bootstrap} alt="bootstrap" /> 
-        <img className="large-icons" src={sass} alt="sass" /> 
-        <img className="icons" src={wordpress} alt="wordpress" /> 
-        <img className="icons" src={php} alt="php" /> 
-        <img className="icons" src={mysql} alt="mysql" /> 
-        <img className="icons" src={symfony} alt="symfony" /> 
-        <img className="large-icons" src={react} alt="react" /> 
-        <img className="icons" src={node} alt="node" /> 
-        <img className="icons" src={git} alt="git" /> 
+        <img className="present__grid--icons" src={html} alt="html" /> 
+        <img className="present__grid--icons"  src={css} alt="css" /> 
+        <img className="present__grid--icons" src={javascript} alt="javascript" /> 
+        <img className="present__grid--icons" src={bootstrap} alt="bootstrap" /> 
+        <img className="present__grid--large-icons" src={sass} alt="sass" /> 
+        <img className="present__grid--icons" src={wordpress} alt="wordpress" /> 
+        <img className="present__grid--icons" src={php} alt="php" /> 
+        <img className="present__grid--icons" src={mysql} alt="mysql" /> 
+        <img className="present__grid--icons" src={symfony} alt="symfony" /> 
+        <img className="present__grid--large-icons" src={react} alt="react" /> 
+        <img className="present__grid--icons" src={node} alt="node" /> 
+        <img className="present__grid--icons" src={git} alt="git" /> 
       </div>
   </div>
   </div> 
