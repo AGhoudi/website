@@ -18,7 +18,7 @@ import git from "../../assets/images/logos/git.png";
 const Present:FC = () => (
   <div> 
     <div className="present">
-      <p className="title-box">Mes langages utilisés</p>
+      <p className="present__title">Mes langages utilisés</p>
       <div className="image-grid">
         <img className="icons" src={html} alt="html" /> 
         <img className="icons"  src={css} alt="css" /> 

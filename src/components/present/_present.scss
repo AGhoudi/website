@@ -136,7 +136,7 @@
   text-align: center;  
 }
 
-.title-box {
+.present__title {
   font-size: 2.6rem;
   color: #253743;
   font-style: italic;
@@ -158,21 +158,21 @@
 }
 
 @media screen and (max-width: 1025px) {
-  .title-box {
+  .present__title {
     font-size: 35px;
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 769px) {
-  .title-box {
+  .present__title {
     font-size: 30px;
     margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 31.25rem) {
-  .title-box {
+  .present__title {
     font-size: 1.825rem;
     margin-top: 0;
   }
