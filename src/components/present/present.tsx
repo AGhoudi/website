@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import "./_present.scss";
 
 import html from "../../assets/images/logos/html.png";
@@ -13,9 +15,9 @@ import react from "../../assets/images/logos/react.png";
 import node from "../../assets/images/logos/node.png";
 import git from "../../assets/images/logos/git.png";
 
-const Present = () => (
+const Present:FC = () => (
   <div> 
-    <div className="present-box">
+    <div className="present">
       <p className="title-box">Mes langages utilisés</p>
       <div className="image-grid">
         <img className="icons" src={html} alt="html" /> 
