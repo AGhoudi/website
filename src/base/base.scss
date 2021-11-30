@@ -1,6 +1,7 @@
 /* SASS RULES */
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 /* COLORS */
 $white: #fff;
@@ -14,9 +15,11 @@ $yellow: #D6C7A8;
 
 /* FONTS */
 $fontElite: 'Special Elite', cursive;
-$fontParisienne:  'Parisienne', cursive;
+$fontParisienne: 'Parisienne', cursive;
+$fontBaskerville: 'Libre Baskerville', serif;
 $fontSize: (
   very-large: 3.125rem,
+  xl-large: 2.6rem,
   x-large: 2.375rem,
   m-large: 2.25rem,
   med-larger: 2.125rem,
