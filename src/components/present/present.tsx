@@ -33,7 +33,7 @@ const Present:FC = () => (
         <img className="present__grid--icons" src={node} alt="node" /> 
         <img className="present__grid--icons" src={git} alt="git" /> 
       </div>
-  </div>
+    </div>
   </div> 
 );
 

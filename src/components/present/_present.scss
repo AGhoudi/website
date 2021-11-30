@@ -1,3 +1,4 @@
+@import "../../base/base.scss";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 .present {
@@ -8,181 +9,49 @@
   margin: 15px auto;
   background: #D6C7A8;
   padding: 15px;
-}
-
-.present__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 10px;
-  place-items: center;
-}
-
-.face-box {
-  display: flex;
-  width: 70%;
-  min-height: 300px;
-  height: auto;
-  border: 3px solid #284150;
-  border-radius: 8px;
-  margin: 35px auto;
-  background: #D6C7A8;
-}
-
-.face-avatar {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-avatar {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3px;
-}
-
-.picture-box {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5625rem auto 0.3125rem auto !important;
-}
-
-.circle {
-  height: 12.5rem;
-  width: 12.5rem;
-  border: 1.875rem solid #1e2f45;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes turn {
-  0% {
-    transform: rotate(-0deg);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    place-items: center;
+    &--icons {
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      @include media(big-mobile) {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+      }
+    }
+    &--large-icons {
+      width: 90px;
+      height: 90px;
+      @include media(big-mobile) {
+        width: 80px;
+        height: 80px;
+      }
+    }
   }
-
-  10% {
-    transform: rotate(-36deg);
-  }
-
-  20% {
-    transform: rotate(-72deg);
-  }
-
-  30% {
-    transform: rotate(-108deg);
-  }
-
-  40% {
-    transform: rotate(-144deg);
-  }
-
-  50% {
-    transform: rotate(-180deg);
-  }
-
-  60% {
-    transform: rotate(-216deg);
-  }
-
-  70% {
-    transform: rotate(-252deg);
-  }
-
-  80% {
-    transform: rotate(-288deg);
-  }
-
-  90% {
-    transform: rotate(-324deg);
-  }
-
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.circle:hover {
-  border-color: #fff;
-  animation-name: turn;
-  animation-duration: 1.2s;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.bigAvatar {
-  height: 85%;
-  width: 85%;
-  border-radius: 100%;
-  border: 0.125rem solid #fff;
-}
-
-.circle:hover .bigAvatar {
-  border: 0.0625rem solid #fff;
-}
-
-.presentation {
-  font-size: 1.6875rem;
-  color: #253743;
-  font-style: italic;
-  font-family: 'Special Elite', cursive;
-  text-shadow: 0.09375rem 0.09375rem 0.125rem #fff;
-  text-align: center;  
-}
-
-.present__title {
-  font-size: 2.6rem;
-  color: #253743;
-  font-style: italic;
-  font-family: 'Libre Baskerville', serif;
-  text-shadow: 0.125rem 0.125rem 0.125rem #fff;
-  text-align: center;
-  margin: 45px auto;
-}
-
-.present__grid--icons {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-}
-
-.present__grid--large-icons {
-  width: 90px;
-  height: 90px;
-}
-
-@media screen and (max-width: 1025px) {
-  .present__title {
-    font-size: 35px;
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .present__title {
-    font-size: 30px;
-    margin-top: 5px;
-  }
-}
-
-@media screen and (max-width: 31.25rem) {
-  .present__title {
-    font-size: 1.825rem;
-    margin-top: 0;
-  }
-  .present__grid--icons {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-  }  
-  .present__grid--large-icons {
-    width: 80px;
-    height: 80px;
+  &__title {
+    font-size: 2.6rem;
+    color: #253743;
+    font-style: italic;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 0.125rem 0.125rem 0.125rem #fff;
+    text-align: center;
+    margin: 45px auto;
+    @include media(computer) {
+      font-size: 35px;
+      margin-top: 0;
+    }
+    @include media(tablet) {
+      font-size: 30px;
+      margin-top: 5px;
+    }
+    @include media(big-mobile) {
+      font-size: 1.825rem;
+      margin-top: 0;
+    }
   }
 }
