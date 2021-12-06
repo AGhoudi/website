@@ -9,6 +9,18 @@
     min-height: 63.625rem;
     @include height(auto);
   }
+  @include media(m-large) {
+    min-height: 64.375rem;
+  }
+  @include media(l-tablet) {
+    min-height: 65rem; 
+  }
+  @include media(m-tablet) {
+    min-height: 66.875rem;
+  }
+  @include media(xs-tablet) {
+    min-height: 68.75rem;
+  }
 }
 
 .content {
@@ -25,108 +37,65 @@
     font-family: $fontElite;
     text-shadow: 0.09375rem 0.09375rem 0.125rem $white;
     @include textcenter;
-    @include margin(10.625rem,auto,0,auto);  
-  }
-}
-//70.875rem
-@media screen and (max-width: 1134px) {
-  .presentation {
-    font-size: 1.4375rem;
-  }
-
-  section#discover {
-    min-height: 1030px;
-    height: auto;    
-  }
-}
-//50.9375rem
-@media screen and (max-width: 815px) {
-  section#discover {
-    min-height: 1040px;
-    height: auto;    
-  }
-}
-//50 rem
-@media screen and (max-width: 800px) {
-  section#discover {
-    min-height: 1070px;
-    height: auto;    
-  }
-}
-
-@media screen and (max-width: 48.0625rem) {
-  .presentation {
-    font-size: 1.3125rem;
-    margin: 9.375rem auto 0 auto;
-  } 
-}
-
-@media screen and (max-width: 685px) {
-  section#discover {
-    min-height: 1100px;
-    height: auto;    
-  }
-
-  .presentation {
-    margin-top: 10rem;
+    @include margin(10.625rem,auto,0,auto);
+    @include media(m-large) {
+      font-size: map-get($fontSize,medium);
+    }
+    @include media(tablet) {
+      font-size: map-get($fontSize,small-plus);
+      @include margin(9.375rem,auto,0,auto);
+    }
+    @include media(xs-tablet) {
+      margin-top: 10rem;
+    }
+    @include media(big-mobile) {
+      font-size: 1.125rem;
+      margin-top: 8.75rem;
+    }  
   }
 }
 
 @media screen and (max-width: 33.75rem) {
-  section#discover {
-    min-height: 1150px;
-    height: auto;    
+  #discover {
+    min-height: 71.875rem;    
   }
 }
 
 @media screen and (max-width: 26.625rem) {
-  .presentation {
+  .content__presentation {
     font-size: 1.125rem;
   }
-  section#discover {
-    min-height: 1170px;
-    height: auto;    
+  #discover {
+    min-height: 73.125rem;   
   }
 }
 
-@media screen and (max-width: 426px) {
-  section#discover {
-    min-height: 1100px;
-    height: auto;    
+@media screen and (max-width: 26.625rem) {
+  #discover {
+    min-height: 68.75rem;    
   }
 }
 
-@media screen and (max-width: 410px) {
-  section#discover {
-    min-height: 1220px;
-    height: auto;    
+@media screen and (max-width: 25.625rem) {
+  #discover {
+    min-height: 76.25rem;    
   }
 }
 
-@media screen and (max-width: 405px) {
-  section#discover {
-    min-height: 1250px;
-    height: auto;    
+@media screen and (max-width: 25.3125rem) {
+  #discover {
+    min-height: 78.125rem;    
   }
 }
 
-@media screen and (max-width: 360px) {
-  section#discover {
-    min-height: 1280px;
-    height: auto;    
+@media screen and (max-width: 22.5rem) {
+  #discover {
+    min-height: 80rem;    
   }
 }
 
-@media screen and (max-width: 320px) {
-  section#discover {
-    min-height: 1330px;
-    height: auto;    
-  }
-}
-
-@media screen and (max-width: 31.25rem) {
-  .presentation {
-    font-size: 1.125rem;
-    margin-top: 8.75rem;
+@media screen and (max-width: 20rem) {
+  #discover {
+    min-height: 83.125rem;    
   }
 }
