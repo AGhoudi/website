@@ -1,3 +1,5 @@
+@import "../../base/base.scss";
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -17,9 +19,13 @@
   width: 25%;
   margin: 1.25rem;
   border-radius: 0.625rem;
+  @include media(tablet) {
+    min-height: 17.4375rem !important;
+    max-height: 17.5rem !important;
+  }
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 52.0625rem) {
   div.cards {
     flex-direction: column;
     padding: 0 !important;
@@ -29,14 +35,7 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 299px !important;
-    max-height: 300px !important;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .card {
-    min-height: 279px !important;
-    max-height: 280px !important;
+    min-height: 18.6875rem !important;
+    max-height: 18.75rem !important;
   }
 }

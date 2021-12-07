@@ -1,12 +1,14 @@
+import { FC } from 'react';
+
 import YellowRibbon from "../yellow-ribbon/yellow-ribbon";
 import CardList from "../card-list/card-list";
 
 import "./skills.scss";
 
-const Skills = () => (
-  <section id="skills">
+const Skills:FC = () => (
+  <section id="skills" className="skills">
     <YellowRibbon title="Mes Compétences" />
-    <p className="explain">
+    <p className="skills__explain">
       En tant que développeur web, j'ai utilisé de nombreux langages<br />
        et ai pu développer de nombreuses compétences transverses.<br />
       Je me définirais comme un développeur fullstack, car j'aime utiliser<br />

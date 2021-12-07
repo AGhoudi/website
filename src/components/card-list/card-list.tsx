@@ -1,9 +1,10 @@
+import { FC } from 'react';
 
 import Card from "../card/card";
 
 import "./card-list.scss";
 
-const CardList = () => (
+const CardList:FC = () => (
   <div className="card-container">
     <div className="cards">
       <div className="card">
