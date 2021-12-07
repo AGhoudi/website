@@ -1,21 +1,24 @@
-#projects {
+@import "../../base/base.scss";
+
+.projects {
   min-height: 31.25rem;
   height: auto;
   width: 100vw;
   background-color: #D6C7A8;
   padding-bottom: 50px;
+  &__text {
+    font-size: 25px;
+    color: #253743;
+    font-style: italic;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 0.09375rem 0.09375rem 0.125rem #fff;
+    text-align: center;
+    margin: 15.375rem auto 3rem auto;
+    width: 75%; 
+  }
 }
 
-.projects-text {
-  font-size: 25px;
-  color: #253743;
-  font-style: italic;
-  font-family: 'Special Elite', cursive;
-  text-shadow: 0.09375rem 0.09375rem 0.125rem #fff;
-  text-align: center;
-  margin: 15.375rem auto 3rem auto;
-  width: 75%; 
-}
+
 
 @media screen and (max-width: 1025px) {
   .projects-text {
