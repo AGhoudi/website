@@ -4,39 +4,28 @@
   min-height: 31.25rem;
   height: auto;
   width: 100vw;
-  background-color: #D6C7A8;
-  padding-bottom: 50px;
+  background-color: $yellow;
+  padding-bottom: 3.125rem;
   &__text {
-    font-size: 25px;
-    color: #253743;
+    font-size: map-get($fontSize, medium-large);
+    color: $darkBlue;
     font-style: italic;
-    font-family: 'Special Elite', cursive;
-    text-shadow: 0.09375rem 0.09375rem 0.125rem #fff;
-    text-align: center;
-    margin: 15.375rem auto 3rem auto;
-    width: 75%; 
-  }
-}
-
-
-
-@media screen and (max-width: 1025px) {
-  .projects-text {
-    font-size: 23px;
-    margin: 230px auto 30px auto;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .projects-text {
-    font-size: 21px;
-    margin: 190px auto 30px auto;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .projects-text {
-    font-size: 18px;
-    margin: 170px auto 30px auto;
+    font-family: $fontElite;
+    text-shadow: 0.09375rem 0.09375rem 0.125rem $white;
+    @include textcenter;
+    @include margin(15.375rem,auto,3rem,auto);
+    width: 75%;
+    @include media(computer) {
+      font-size: map-get($fontSize,medium);
+      @include margin(14.375rem,auto,1.875rem,auto);
+    }
+    @include media(tablet) {
+      font-size: map-get($fontSize,small-plus);
+      @include margin(11.875rem,auto,1.875rem,auto);
+    }
+    @include media(mobile) {
+      font-size: map-get($fontSize,x-small);
+      margin: 10.625rem auto 1.875rem auto;
+    } 
   }
 }
