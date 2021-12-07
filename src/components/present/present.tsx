@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import "./_present.scss";
+import "./present.scss";
 
 import html from "../../assets/images/logos/html.png";
 import css from "../../assets/images/logos/css.png";

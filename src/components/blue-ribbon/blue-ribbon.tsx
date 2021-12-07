@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import './_blue-ribbon.scss';
+import './blue-ribbon.scss';
 
 interface Ribbon {
   title: string

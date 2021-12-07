@@ -1,0 +1,66 @@
+@import "../../base/base.scss";
+
+.yellowribbon {
+  font-size: map-get($fontSize,very-large) !important;
+  @include width(60%);
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(0deg, $darkYellow 0%, $yellow 99%);
+  color: $white;
+  @include textcenter;
+  padding: 1em 0em;
+  @include margin(0,auto,1.2em,auto);
+  top: 2.5em;
+  font-family: $fontParisienne;
+  @include media(computer) {
+    font-size: 2.8125rem !important;
+    @include width(65%);
+    top: 2.6em;
+  }
+  @include media(tablet) {
+    font-size: 2.1875rem !important;
+    @include width(63%);
+    top: 2.6em;
+  }
+  @include media(mobile) {
+    font-size: 1.8125rem !important;
+    @include width(63%);
+    top: 3.2em;
+  }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    @include border(1.5em,$darkYellow);
+    z-index: -1;
+  }
+  &:before {
+    left: -2em;
+    border-left-color: transparent;
+  }
+  &:after {
+    right: -2em;
+    border-right-color: transparent;
+  }
+  &-folds:before, &-folds:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: $yellow transparent;
+    bottom: -1em;
+  }
+  &-folds:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+  }
+  &-folds:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+  }
+  &-index {
+    position: relative;
+    z-index: 1;
+  }
+}

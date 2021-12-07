@@ -1,7 +1,7 @@
 import BlueRibbon from "../blue-ribbon/blue-ribbon";
 import Present from "../present/present";
 
-import "./_discover.scss";
+import "./discover.scss";
 
 const Discover: React.FunctionComponent = () => (
   <section id="discover">

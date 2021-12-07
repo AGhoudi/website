@@ -1,4 +1,4 @@
-import "./_navbar.scss";
+import "./navbar.scss";
 
 import logo from "../../assets/images/logo.png";
 

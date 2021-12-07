@@ -1,4 +1,4 @@
-import './_header.scss';
+import './header.scss';
 
 import avatar from "../../assets/images/avatar.png";
 
