@@ -1,44 +1,40 @@
+@import "../../base/base.scss";
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   width: 95vw;
-  gap: 25px;
+  gap: 1.5625rem;
   grid-template-columns: 1fr 1fr;
-  background-color: #D6C7A8;
-  margin: 3px auto;
-  padding: 20px;
+  background-color: $yellow;
+  margin: 0.1875rem auto;
+  padding: 1.25rem;
   place-items: center !important;
-}
-
-@media screen and (max-width: 1025px) {
-  .grid-container {
+  @include media(computer) {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 1.875rem;
   }
-}
-
-@media screen and (max-width: 850px) {
-  .grid-container {
-    padding: 20px 0;
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .grid-container {
+  @include media(mobile) {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 20px 0;
+    gap: 1.875rem;
+    padding: 1.25rem 0;
     width: 75vw;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 53.125rem) {
+  .grid-container {
+    padding: 1.25rem 0;
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 23.5rem) {
   .grid-container {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 20px 0;
+    gap: 1.875rem;
+    padding: 1.25rem 0;
     width: 90vw;
   }
 }

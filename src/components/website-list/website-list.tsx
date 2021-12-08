@@ -31,7 +31,7 @@ const WebsiteList:FC = () => (
         image={velov} 
       />
       <Website 
-        title="BLOG DE JEAN FORTEROCHE"
+        title="BLOG JEAN FORTEROCHE"
         link="https://www.ali-ghoudi.com/projet4/"
         image={blog} 
       />
