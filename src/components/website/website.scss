@@ -1,0 +1,124 @@
+@import "../../base/base.scss";
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  border-radius: 0.5rem;
+  position: relative;
+  @include media(computer) {
+    display: flex;
+    justify-content: center;
+    min-height: 24.9375rem !important;
+    max-height: 25rem !important;
+  }
+  @include media(mobile) {
+    padding: 0;
+    min-height: 11.1875rem !important;
+    max-height: 11.25rem !important;
+  }
+  &__image {
+    width: 95%;
+    height: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    @include media(computer) {
+      width: 75%;
+    }
+    @include media(mobile) {
+      width: 75%;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: 1.2s ease;
+  background-color: $darkBlue;
+  border-radius: 0.5rem;
+  margin: 0 auto;  
+  @include media(computer) {
+    width: 75%;
+  }
+  @include media(mobile) {
+    width: 75%;
+  }
+  &__text {
+    color: $white !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    @include textcenter;
+    font-size: 1.9rem;
+    font-family: $fontOswald;
+    text-decoration: none;
+    @include media(mobile) {
+      font-size: 1.5rem;
+    }
+  }
+  &__website {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $orangeYellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;  
+}
+
+@media screen and (max-width: 53.125rem) {
+  .grid-item__image {
+    width: 75%;
+  }
+  .overlay {
+    width: 75%;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .grid-item__image {
+    width: 70%;
+  }
+  .overlay {
+    width: 70%;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .grid-item__image {
+    width: 65%;
+  }
+  .overlay {
+    width: 65%;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    min-height: auto !important;
+    max-height: auto !important;
+  }
+}
