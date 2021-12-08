@@ -1,0 +1,35 @@
+@import "../../base/base.scss";
+
+.contact {
+  background: linear-gradient(
+rgba(0, 0, 0, 0.45),
+rgba(0, 0, 0, 0.45)
+  ),url(../../assets/images/parallax.webp)no-repeat;
+  min-height: 31.25rem;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  &__information {
+    @include margin(15rem,auto,3.125rem,auto);
+    font-family: $fontElite;
+    color: $white;
+    text-shadow: 0.09375rem 0.09375rem 0.125rem rgb(187, 152, 106);
+    font-size: 1.5625rem;
+    font-style: italic;
+    width: 80%;
+    @include media(computer) {
+      font-size: map-get($fontSize,medium);
+    }
+    @include media(tablet) {
+      font-size: map-get($fontSize,small-plus);
+      @include margin(11.25rem,auto,3.125rem,auto);
+    }
+    @include media(mobile) {
+      font-size: map-get($fontSize,x-small);
+      @include margin(10.625rem,auto,2.5rem,auto);
+    }
+  }
+}

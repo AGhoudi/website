@@ -1,0 +1,20 @@
+@import "../../base/base.scss";
+
+.footer {
+  @include flexDisplay;
+  background-color: $yellow;
+  padding: 0.9375rem auto !important;
+  font-family: $fontLobster;
+  min-height: 2.5rem;
+  font-size: map-get($fontSize,x-small);
+  &__text{
+    margin: 0 auto !important;
+    color: $darkBlue;
+  }
+}
+
+.heart:hover {
+  background-color: $white;
+  cursor: pointer;
+  border-radius: 100%;
+}
