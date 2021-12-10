@@ -3,7 +3,7 @@ import "./navbar.scss";
 import logo from "../../assets/images/logo.png";
 
 const Navbar: React.FunctionComponent = () => (    
-  <nav className="navbar fixed-top navbar-expand-md navbar-light bg-light">
+  <nav className="navbar fixed-top navbar-expand-md navbar-light">
     <div id="navigation" className="container">
       <div id="brand" className="brand">
         <img src={logo} alt="main logo" className="brand__logo" />
