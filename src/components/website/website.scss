@@ -9,13 +9,13 @@
   @include media(computer) {
     display: flex;
     justify-content: center;
-    min-height: 24.9375rem !important;
-    max-height: 25rem !important;
+    min-height: 24.9375rem;
+    max-height: 25rem;
   }
   @include media(mobile) {
     padding: 0;
-    min-height: 11.1875rem !important;
-    max-height: 11.25rem !important;
+    min-height: 11.1875rem;
+    max-height: 11.25rem;
   }
   &__image {
     width: 95%;
@@ -53,7 +53,7 @@
     width: 75%;
   }
   &__text {
-    color: $white !important;
+    color: $white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,7 +118,7 @@
   .grid-item {
     display: flex;
     justify-content: center;
-    min-height: auto !important;
-    max-height: auto !important;
+    min-height: auto;
+    max-height: auto;
   }
 }

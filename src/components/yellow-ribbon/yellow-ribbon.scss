@@ -1,7 +1,7 @@
 @import "../../base/base.scss";
 
 .yellowribbon {
-  font-size: map-get($fontSize,very-large) !important;
+  font-size: map-get($fontSize,very-large);
   @include width(60%);
   font-weight: bold;
   position: relative;
@@ -13,17 +13,17 @@
   top: 2.5em;
   font-family: $fontParisienne;
   @include media(computer) {
-    font-size: 2.8125rem !important;
+    font-size: 2.8125rem;
     @include width(65%);
     top: 2.6em;
   }
   @include media(tablet) {
-    font-size: 2.1875rem !important;
+    font-size: 2.1875rem;
     @include width(63%);
     top: 2.6em;
   }
   @include media(mobile) {
-    font-size: 1.8125rem !important;
+    font-size: 1.8125rem;
     @include width(63%);
     top: 3.2em;
   }

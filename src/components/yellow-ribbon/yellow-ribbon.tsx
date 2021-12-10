@@ -10,7 +10,7 @@ const YellowRibbon:FC<Ribbon> = ({title}) => (
   <div className="yellowribbon-index">
     <p className="yellowribbon">
       <strong className="yellowribbon-folds">
-      {title}
+        {title}
       </strong>
     </p>
   </div>

@@ -40,15 +40,15 @@
   perspective: 6.25rem;
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   &.front {
-    width: 95% !important;
-    padding: 0.5rem !important;
+    width: 95%;
+    padding: 0.5rem;
     @include textcenter;
     @include flexDisplay;
     flex-direction: column;
   }
   &.back {
-    width: 95% !important;
-    padding: 0.5rem !important;
+    width: 95%;
+    padding: 0.5rem;
     @include textcenter;
     @include flexDisplay;
     flex-direction: column;
@@ -142,20 +142,20 @@
 
 @media screen and (max-width: 76.5625rem) {
   .contents.front {
-    height: 8.125rem !important;
+    height: 8.125rem;
   }
 
   .contents.back {
-    height: 8.125rem !important;
+    height: 8.125rem;
   }
 }
 
 @media screen and (max-width: 65rem) {
   .contents.front {
-    height: 15.625rem !important;
+    height: 15.625rem;
   }
 
   .contents.back {
-    height: 15.625rem !important;
+    height: 15.625rem;
   }
 }

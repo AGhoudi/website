@@ -46,7 +46,7 @@ input::placeholder,
 textarea::placeholder {
  color: rgb(107, 103, 103);
  text-align: center;
- padding-bottom: 7px;
+ padding-bottom: 0.4375rem;
 }
 input,
 .email-content,
@@ -65,87 +65,54 @@ input {
 }
 #not-mail {
   display: none;
-  padding-right: 10px;
+  padding-right: 0.625rem;
   position: absolute;
-  top: 4px;
-  color: #ff4d4d;
+  top: 0.25rem;
+  color: $red;
   right: 0;
   transform-origin: 50% 50%;
 }
-@keyframes dongle {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  10% {
-    transform: translate(-10px, 0px);
-  }
-  20% {
-    transform: translate(10px, 0px);
-  }
-  30% {
-    transform: translate(-10px, 0px);
-  }
-  40% {
-    transform: translate(10px, 0px);
-  }
-  50% {
-    transform: translate(-10px, 0px);
-  }
-  60% {
-    transform: translate(10px, 0px);
-  }
-  70% {
-    transform: translate(-10px, 0px);
-  }
-  80% {
-    transform: translate(10px, 0px);
-  }
-  90% {
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
+
 textarea {
   resize: none;
   padding: auto;
 }
+
 .button {
   font-size: 1.3rem;
-  margin-top: 15px;
-  color: #fff;
+  margin-top: 0.9375rem;
+  color: $white;
   background: none;
   border: none ;
   cursor: pointer;
   transition: .2s;
   width: 100%;
-  font-family: 'Lobster', cursive;
+  font-family: $fontLobster;
 }
 
 .form-message {
-  margin-top: 10px;
-  padding: 12px;
+  margin-top: 0.625rem;
+  padding: 0.75rem;
   opacity: 0;
   transition: 0.2s ease;
-  color: white;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+  color: $white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.125rem rgba(51, 51, 51, 0.3);
 }
 
 .send_button {
-  font-family: 'Lobster', cursive;
-  border: 2px solid #fff;
-  color: #253743;
-  margin-top: 20px;
-  font-size: 25px;  
+  font-family: $fontLobster;
+  border: 0.125rem solid $white;
+  color: $darkBlue;
+  margin-top: 1.25rem;
+  font-size: 1.5625rem;  
 }
 
 .contact_bar {
-  color: #D6C7A8;
+  color: $yellow;
   width: 70%;
-  margin: 25px auto;
-  border: 3px solid #D6C7A8;
+  margin: 1.5625rem auto;
+  border: 0.1875rem solid $yellow;
 }
 
 .mu-social-media a {
@@ -153,104 +120,104 @@ textarea {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 15px;
-  border: 1px solid #333;
-  width: 80px;
-  height: 80px;
-  line-height: 32px;
-  text-align: center;
-  margin: 5px 5px;
+  font-size: 0.9375rem;
+  border: 0.0625rem solid $grey;
+  width: 5rem;
+  height: 5rem;
+  line-height: 2rem;
+  @include textcenter;
+  margin: 0.3125rem 0.3125rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-decoration: none;
-  color: #2f2f2f;
-  background-color: #fff;
+  color: $darkGrey;
+  background-color: $white;
 }
 
 i.fab.fa-linkedin.fa-2x,
 i.fab.fa-github.fa-2x,
 i.fab.fa-codepen.fa-2x {
-  color: #253743;
+  color: $darkBlue;
 }
 
 .mu-resume-btn {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 0.625rem 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border: 3px solid #fff;
-  color: #fff;
-  border-radius: 8px;
-  font-size: 25px;
-  text-shadow: 1px 1px 1px #253743;
+  border: 0.1875rem solid $white;
+  color: $white;
+  border-radius: 0.5rem;
+  font-size: 1.5625rem;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem $darkBlue;
   text-decoration: none;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 64rem) {
   .form-title {
-    font-size: 33px;
+    font-size: 2.0625rem;
   }
 
   .contact-label {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 
   .send_button {
-    font-size: 23px;  
+    font-size: 1.4375rem;  
   }
 
   .mu-resume-btn {
-    font-size: 23px; 
+    font-size: 1.4375rem; 
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 48.0625rem) {
   .form-title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .contact-label {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 
   .send_button {
-    font-size: 21px;  
+    font-size: 1.3125rem;  
   }
 
   .mu-resume-btn {
-    font-size: 21px; 
+    font-size: 1.3125rem; 
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 26.625rem) {
   .form-title {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
   .contact-label {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .send_button {
-    font-size: 18px;  
+    font-size: 1.125rem;  
   }
   .contact-form {
     width: 85vw;    
   }
 
   #name, #email, #message {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   .mu-social-media a {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
   }
 
   .mu-resume-btn {
-    font-size: 18px; 
+    font-size: 1.125rem; 
   }
 }
 
