@@ -46,7 +46,7 @@ const Form:FC = () => {
     setTimeout(() => {
       formMessage.style.opacity = '0';
 
-    }, 5000);
+    }, 10000);
   }
 
   return (          

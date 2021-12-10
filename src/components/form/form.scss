@@ -155,6 +155,9 @@ i.fab.fa-codepen.fa-2x {
   font-size: 1.5625rem;
   text-shadow: 0.0625rem 0.0625rem 0.0625rem $darkBlue;
   text-decoration: none;
+  &:hover {
+    color: $darkBlue;
+  }
 }
 
 @media screen and (max-width: 64rem) {
