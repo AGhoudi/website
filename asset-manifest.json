@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.b3831291.chunk.css",
+    "main.js": "/website/static/js/main.de3aa1f0.chunk.js",
+    "main.js.map": "/website/static/js/main.de3aa1f0.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.eeef4c2e.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.eeef4c2e.js.map",
+    "static/js/2.d94fd55d.chunk.js": "/website/static/js/2.d94fd55d.chunk.js",
+    "static/js/2.d94fd55d.chunk.js.map": "/website/static/js/2.d94fd55d.chunk.js.map",
+    "static/js/3.a8e8c108.chunk.js": "/website/static/js/3.a8e8c108.chunk.js",
+    "static/js/3.a8e8c108.chunk.js.map": "/website/static/js/3.a8e8c108.chunk.js.map",
+    "index.html": "/website/index.html",
+    "service-worker.js": "/website/service-worker.js",
+    "service-worker.js.map": "/website/service-worker.js.map",
+    "static/css/main.b3831291.chunk.css.map": "/website/static/css/main.b3831291.chunk.css.map",
+    "static/js/2.d94fd55d.chunk.js.LICENSE.txt": "/website/static/js/2.d94fd55d.chunk.js.LICENSE.txt",
+    "static/media/blog.f66a5b58.webp": "/website/static/media/blog.f66a5b58.webp",
+    "static/media/card.scss": "/website/static/media/card.89c8fb6c.webp",
+    "static/media/cats.ce5e4113.webp": "/website/static/media/cats.ce5e4113.webp",
+    "static/media/chalet-caviar.4b892887.webp": "/website/static/media/chalet-caviar.4b892887.webp",
+    "static/media/gesty.50929fd5.webp": "/website/static/media/gesty.50929fd5.webp",
+    "static/media/ireki.7dae857c.webp": "/website/static/media/ireki.7dae857c.webp",
+    "static/media/leonardo.bd2ff5d0.webp": "/website/static/media/leonardo.bd2ff5d0.webp",
+    "static/media/contact.scss": "/website/static/media/parallax.c6c4b8e8.webp",
+    "static/media/react.5a16b76d.png": "/website/static/media/react.5a16b76d.png",
+    "static/media/header.scss": "/website/static/media/tech.1a8acc57.webp",
+    "static/media/velov.8c7de0ce.webp": "/website/static/media/velov.8c7de0ce.webp",
+    "static/media/webagency.44b56bb1.webp": "/website/static/media/webagency.44b56bb1.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eeef4c2e.js",
+    "static/js/2.d94fd55d.chunk.js",
+    "static/css/main.b3831291.chunk.css",
+    "static/js/main.de3aa1f0.chunk.js"
+  ]
+}
