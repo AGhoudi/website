@@ -7,7 +7,7 @@
 }
 
 .form-content {
-  display: flex !important;
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -40,7 +40,7 @@ textarea {
   border: 0.0625rem solid $black;
   color: $black;
   border-radius: 0.4375rem;
-  margin-bottom: 0.9375rem !important;
+  margin-bottom: 0.9375rem;
 }
 input::placeholder, 
 textarea::placeholder {
@@ -120,7 +120,7 @@ textarea {
   cursor: pointer;
   transition: .2s;
   width: 100%;
-  font-family: 'Lobster', cursive !important;
+  font-family: 'Lobster', cursive;
 }
 
 .form-message {
@@ -241,7 +241,7 @@ i.fab.fa-codepen.fa-2x {
   }
 
   #name, #email, #message {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 
   .mu-social-media a {

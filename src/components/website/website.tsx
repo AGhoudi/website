@@ -10,7 +10,7 @@ interface Weblist {
 
 const Website:FC<Weblist> = ({image, title, link}) => (
   <div className="grid-item">
-    <img src={image} alt={title} className="grid-item__image" />
+    <img src={image} loading="lazy" alt={title} className="grid-item__image" />
     <div className="overlay">
       <div className="overlay__text">
         <a className="overlay__website" href={link} target="_blank" rel="noopener noreferrer" >{title}</a>

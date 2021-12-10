@@ -62,27 +62,30 @@ const Form:FC = () => {
       <h2 className="form-title">Me Contacter</h2>
 
       <div className="form-content">
-        <label className="contact-label">Nom</label>
+        <label className="contact-label" htmlFor='name'>Nom</label>
         <input 
           type="text"
-          id="name" 
+          id="name"
+          aria-label="name" 
           name="name"
           placeholder="nom *"
           required 
         />
 
-        <label className="contact-label">Email</label>
+        <label className="contact-label" htmlFor='email'>Email</label>
         <input 
           type="email"
-          id="email" 
+          id="email"
+          aria-label="email" 
           name="user_email"
           placeholder="email *"
           required 
         />
 
-        <label className="contact-label">Message</label>
+        <label className="contact-label" htmlFor='message'>Message</label>
         <textarea
-          id="message" 
+          id="message"
+          aria-label="message" 
           name="message" 
           rows={4}
           placeholder="message *"
