@@ -10,3 +10,7 @@ test('renders learn react link', () => {
 test('renders react link', () => {  
   
 });
+
+test('renders link', () => {  
+  
+});
